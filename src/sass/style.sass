@@ -1,5 +1,197 @@
-p
-    color: red
-    
+@import "normalizes.scss"
+@import "resets.scss"
 
- 
+*
+    box-sizing: border-box
+
+
+@font-face 
+    font-family: "OpenSansS"
+    src: url('../fonts/OpenSans-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "OpenSansS"
+    src: url('../fonts/OpenSans-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+
+/* main styles */
+
+html
+    font-family: "OpenSansS"
+    font-weight: regular
+
+.container
+    max-width: 1140px 
+    margin: 0 auto
+    position: relative
+
+.hamburger
+    width: 50px
+    height: 50px
+    margin-right: 10px
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    &__line
+        width: 50px
+        height: 5px
+        background-color: white
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 20px
+        font-size: 18px
+        &:last-child
+            margin-right: 0px
+        a
+            text-decoration: none
+            color: white
+    
+.contact
+    &__vertical-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-right: 20px
+    &__horizontal-wrapper
+        display: flex-inline
+    &__text
+        color: white
+        font-size: 18px
+    &__icon
+        img
+            min-width: 40px
+            margin-right: 5px
+        &:last-child
+            margin-right: 0px
+            
+.slider
+    width: 921px
+    height: 411px 
+    overflow: hidden
+    border: 3px solid #fff
+    position: relative
+    margin-bottom: 20px
+    &__navigation
+        position: absolute
+        bottom: 16px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        &_output
+            display: flex
+            flex-direction: column
+            align-items: center
+    &__item
+        width: 25%
+        transition: all .6s ease
+        img
+            width: 100%
+            height: 100%
+        &_big
+            width: 50%
+    &_switch
+        width: 1000px
+        height: 270px
+        border: none
+    &__btn
+        color: #fff
+        font-size: 28px
+        margin-right: 80px
+        transition: all .4s ease
+        &:last-child
+            margin-right: 0px
+        &:hover
+            color: #eca02ce5
+    &__items-container
+        height: 50px
+        width: 1000px
+        background-color: #fff
+        
+
+.bar
+    height: 8px
+    width: 30px
+    margin: 6px
+    cursor: pointer
+    background-color: #000
+    opacity: .5
+    border-radius: 10px
+    transition: all .4s ease
+    &:hover
+        opacity: 0.8
+        transform: scale(1.1)
+   
+input[name="r"]
+    position: absolute
+    visibility: hidden
+
+.slides-container
+    width: 400%
+    height: 100%
+    display: flex
+    &_horizontal
+        width: 200%
+
+#r1:checked ~ .s1
+    margin-left: 0
+
+#r2:checked ~ .s1
+    margin-left: -25%
+
+#r3:checked ~ .s1
+    margin-left: -50%
+
+#r4:checked ~ .s1
+    margin-left: -75%
+
+#b1:checked ~ .s1
+    margin-left: 0
+
+#b2:checked ~ .s1
+    margin-left: -50%
+
+.title
+    font-size: 30px
+    font-weight: regular
+    color: #fff
+    margin-bottom: 10px
+    /* pages */
+
+    /* main page */
+.first-section
+    position: relative
+    min-height: 800px
+    background-color: black
+    padding-top: 16px
+    overflow: hidden
+    &__header
+        display: flex
+        flex-direction: row
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+        margin-bottom: 30px
+    &__contacts
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__content-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        
+       
+
+
