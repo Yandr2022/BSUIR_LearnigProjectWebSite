@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <link
       rel="shortcut icon"
       href="./icons/Логотип ZorG Premium_краткая версия_золотой.svg"
-    />
+   >
     <title>Zorg-техника и сантехника для кухни</title>
     <meta
       name="description"
       content="Качественная техника по доступным ценам в Минске"
-    />
+   >
   </head>
   <body>
     <!-- First section -->
-    <section class="first-section">
+    <section class="first-section section">
       <!-- Nav menu container -->
       <div class="container first-section__nav-container">
         <!-- Nav menu -->
@@ -29,7 +29,7 @@
           </div>
           <a href="#"
             ><img src="./icons/LogoHorizontal.svg" alt="Логотоип Zorg"
-          /></a>
+         ></a>
         </header>
         <nav class="first-section__nav nav-menu">
           <ul class="nav-menu__list">
@@ -51,10 +51,10 @@
           <div class="contact__horizontal-wrapper">
             <a class="contact__icon" href="#"
               ><img src="icons/IconTg.svg" alt="Телеграм"
-            /></a>
+           ></a>
             <a class="contact__icon" href="#"
               ><img src="icons/IconDirect.svg" alt="Директ"
-            /></a>
+           ></a>
           </div>
         </address>
       </div>
@@ -62,61 +62,298 @@
       <div class="container first-section__content-container">
         <div class="slider">
           <div class="slides-container">
-            <input type="radio" name="r" id="r1" checked />
-            <input type="radio" name="r" id="r2" />
-            <input type="radio" name="r" id="r3" />
-            <input type="radio" name="r" id="r4" />
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
 
-            <div class="slider__item s1"><img src="img/Slide.jpg" alt=""></div>
-            <div class="slider__item"><img src="" alt=""></div>
-            <div class="slider__item"><img src="" alt=""></div>
-            <div class="slider__item"><img src="" alt=""></div>
+            <figure class="slider__item s1">
+              <a href="#"> <img src="img/Slide.jpg" alt=""></a>
+              <figcaption class="slider__img-description">
+                Фото<br>в интерьере
+              </figcaption>
+            </figure>
+            <figure class="slider__item">
+              <a href="#">
+                <img src="img/pexels-karolina-grabowska-7679633.jpg" alt=""
+             ></a>
+              <figcaption
+                class="slider__img-description slider__img-description_top-right"
+              >
+                Статьи<br>и обзоры
+              </figcaption>
+            </figure>
+            <figure class="slider__item">
+              <a href="#"> <img src="img/135121.jpg" alt=""></a>
+              <figcaption class="slider__img-description">
+                Фирменные<br>магазины
+              </figcaption>
+            </figure>
           </div>
 
           <div class="slider__navigation">
             <label for="r1" class="bar"></label>
             <label for="r2" class="bar"></label>
             <label for="r3" class="bar"></label>
-            <label for="r4" class="bar"></label>
           </div>
-
         </div>
-        
+
         <div class="slider slider_switch">
-          <div class="slider__navigation_output">
-            <h1 class="title">МНЕ НУЖНА</h1>
-            <div>
-            <label for="b1" class="slider__btn">Техника</label>
-            <label for="b2" class="slider__btn">Сантехника</label>
-          </div>
+          <div class="slider__navigation_outer">
+            <p class="slider__title">МНЕ НУЖНА</p>
+            <div class="slider__btn-wrapper">
+              <label for="b1" class="slider__btn">Техника</label>
+              <label for="b2" class="slider__btn">Сантехника</label>
+            </div>
           </div>
           <div class="slides-container slides-container_horizontal">
-            <input type="radio" name="r" id="b1" checked />
-            <input type="radio" name="r" id="b2" />
+            <input type="radio" name="b" id="b1" checked>
+            <input type="radio" name="b" id="b2">
 
-            <div class="slider__item slider__item_big s1">
-              <div class="slider__items-container">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-              </div>
+            <div class="slider__item slider__item_big ss1">
+              <nav class="slider__blocks-wrapper">
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img
+                      src="./img/Духовка-черная_2_1 1.png"
+                      alt="Духовой шкаф"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Духовые<br>шкафы
+                  </figcaption>
+                </figure>
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img src="./img/Электро_2_1.png" alt="Варочная панель"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Варочные<br>панели
+                  </figcaption>
+                </figure>
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img src="./img/ULTRA-750-60М_черная_1.png" alt="Вытяжка"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Кухонные<br>вытяжки
+                  </figcaption>
+                </figure>
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img src="./img/W45-915_1.png" alt="Посудомоечная машина"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Посудомоечные<br>машины
+                  </figcaption>
+                </figure>
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img
+                      src="./img/Микроволновка_3_1 1.png"
+                      alt="Микроволновая печь"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Микроволновые<br>печи
+                  </figcaption>
+                </figure>
+              </nav>
             </div>
             <div class="slider__item slider__item_big">
-              <div class="slider__items-container" style="background-color: aqua;"></div>
+              <nav class="slider__blocks-wrapper">
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img src="./img/ZRN 980153_4 1.png" alt="Смеситель"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Кухонные<br>смесители
+                  </figcaption>
+                </figure>
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img
+                      src="./img/Luka-78-2_черный-опал_1 1.png"
+                      alt="Кухонная мойка"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Кухонные<br>мойки
+                  </figcaption>
+                </figure>
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img
+                      src="./img/Жемчужина-Гранд-Черный_1 1.png"
+                      alt="Полотенцесушитель"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Полотенце<br>сушители
+                  </figcaption>
+                </figure>
+                <figure class="slider__block-item">
+                  <a href="#"
+                    ><img
+                      src="./img/38d1-800x800_00-00001395_ 1.png"
+                      alt="Измельчитель"
+                 ></a>
+                  <figcaption class="slider__block-text">
+                    Измельчители<br>отходов
+                  </figcaption>
+                </figure>
+              </nav>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </section>
     <!-- Second section -->
-    <section class="second-section"></section>
+    <section class="second-section section">
+      <div class="container second-section__about-wrapper">
+        <h1 class="second-section__title">О компании</h1>
+        <div class="second-section__horizontal-wrapper">
+          <img
+            class="second-section__logo"
+            src="icons/Vector.svg"
+            alt="Логотип ZorG"
+         >
+          <p class="second-section__text">
+            Торговая марка ZorG основана в 2010 году и уже завоевала
+            расположение покупателей не только в странах СНГ, но и в Европе.<br><br>
+            Команда ZorG всегда идёт в ногу со временем, разрабатывая новые,
+            современные и качественные изделия самого высокого уровня.<br><br>
+            Компания предлагает широкий ассортимент кухонной техники и
+            сантехники изготовленной с применением эксклюзивных технологий,
+            высококачественных материалов и с учетом всех современных трендов в
+            дизайне.
+          </p>
+        </div>
+      </div>
+      <div class="container second-section__mission-wrapper dedicated-block">
+        <h2
+          class="dedicated-block__text second-section__title second-section__title_small"
+        >
+          ZorG - техника, отвечающая требованиям современной жизни
+        </h2>
+        <ul class="second-section__mission-list">
+          <li class="dedicated-block__text second-section__mission-list-item">
+            Понятное управление
+          </li>
+          <li class="dedicated-block__text second-section__mission-list-item">
+            Оптимальный набор функций
+          </li>
+          <li class="dedicated-block__text second-section__mission-list-item">
+            Максимальная эффективность
+          </li>
+        </ul>
+      </div>
+      <div class="container second-section__advantages-wrapper">
+        <div class="dedicated-block second-section__advantages-item">
+          <img src="icons/icons8-средняя-цена-2-100 1.svg" alt="Деньги">
+          <p class="second-section__advantages-description">
+            Доступные<br>цены
+          </p>
+        </div>
+        <div class="dedicated-block second-section__advantages-item">
+          <img
+            src="icons/icons8-высокое-качество-100 1.svg"
+            alt="Палец вверх"
+         >
+          <p class="second-section__advantages-description">
+            Высокое<br>качество
+          </p>
+        </div>
+        <div class="dedicated-block second-section__advantages-item">
+          <img src="icons/DesignIcon.svg" alt="Линейки">
+          <p class="second-section__advantages-description">
+            Современный<br>дизайн
+          </p>
+        </div>
+        <div class="dedicated-block second-section__advantages-item">
+          <img src="icons/TechnoIcon.svg" alt="Микрочип">
+          <p class="second-section__advantages-description">
+            Эксклюзивные<br>технологии
+          </p>
+        </div>
+        <div class="dedicated-block second-section__advantages-item">
+          <img src="icons/ServiceIcon.svg" alt="Инструменты">
+          <p class="second-section__advantages-description">
+            Сервисный<br>центр
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- Third section -->
-    <section class="third-section"></section>
+    <section class="third-section section">
+      <div class="container third-section__content-container">
+        <h2 class="third-section__title">О продукции</h2>
+
+        <div class="slider third-section__slider">
+          <div class="slides-container">
+            <input type="radio" name="v" id="rr1" checked>
+            <input type="radio" name="v" id="rr2">
+            <input type="radio" name="v" id="rr3">
+
+            <figure class="slider__item sss1">
+              <a href="#"> <img src="img/Копия SQL201 1.jpg" alt=""></a>
+              <figcaption
+                class="slider__img-description third-section__slide-description"
+              >
+                <h3>Наши<br>награды</h3>
+                <p>
+                  Бренд Zorg Technology принимал участие<br>и одержал
+                  победу<br>в премии «Номер один» 2021 и 2022 гг!
+                </p>
+              </figcaption>
+              <div class="slider__addition-img-wrapper">
+                <img src="img/image 1.png" alt="">
+              </div>
+            </figure>
+            <div class="slider__item">
+              <iframe
+                src="https://www.youtube.com/embed/6vM3ZTzkC1M"
+                title="Встраиваемый духовой шкаф ZorG BE 9"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="slider__item">
+              <iframe
+                src="https://www.youtube.com/embed/OoE12yBRFkk"
+                title="Кухонные мойки ZorG ZRN"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="slider__navigation">
+            <label for="rr1" class="bar"></label>
+            <label for="rr2" class="bar"></label>
+            <label for="rr3" class="bar"></label>
+          </div>
+        </div>
+        <address class="third-section__contacts contact">
+          <div class="contact__horizontal-wrapper">
+            <a class="contact__icon" href="#"
+              ><img src="icons/IconTg.svg" alt="Телеграм"
+           ></a>
+            <a class="contact__icon" href="#"
+              ><img src="icons/IconDirect.svg" alt="Директ"
+           ></a>
+            <a class="contact__icon" href="#"
+              ><img src="icons/IconYouTube (1).png" alt="Директ"
+           ></a>
+          </div>
+          <div class="contact__horizontal-wrapper">
+            <p class="contact__text third-section__contacts-description">Получить<br>консультацию</p>
+            <a class="contact__icon" href="#"
+              ><img src="icons/Tel.png" alt="Директ"
+           ></a>
+          </div>
+        </address>
+      </div>
+    </section>
     <footer class="footer"></footer>
   </body>
 </html>
