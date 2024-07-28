@@ -48,6 +48,8 @@ html
         background-color: white
 
 .nav-menu
+    display: flex
+    flex-direction: row
     &__list
         display: flex
         flex-direction: row
@@ -59,7 +61,21 @@ html
             text-decoration: none
             color: white
             font-size: 18px
-    
+    &__vertical-list
+        display: flex
+        flex-direction: column
+        margin-bottom: 10px
+    &__vertical-list-item  
+        a
+            text-decoration: none
+            color: white
+            font-size: 15px
+    &__vertical-list-title
+        font-size: 16px
+        font-weight: bold
+        margin-bottom: 7px
+
+
 .contact
     &__vertical-wrapper
         display: flex
@@ -350,9 +366,21 @@ input[name="v"]
         flex-direction: row
         justify-content: space-between 
     &__contacts-description
-        margin-right: 20px 
-            
-    &__slider
+        margin-right: 20px       
         
 
-
+.footer
+    &__container
+        min-height: 286px 
+        hr
+            color: #fff
+            margin-bottom: 20px
+    &__logo
+        min-height: 112px
+        margin-right: 45px
+    &__nav-menu
+        display: flex
+        justify-content: space-evenly
+        align-items: flex-start
+    &__signature
+        font-size: 12px
