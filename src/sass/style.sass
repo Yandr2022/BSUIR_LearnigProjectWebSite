@@ -70,7 +70,7 @@ html
     width: 18%
     z-index: 20
     transition: 0.6s all
-    background: #74797c
+    background: #74797ce7
     padding-top: 10%
     padding-left: 3%
     &_active
@@ -119,7 +119,8 @@ html
         font-size: 16px
         font-weight: bold
         margin-bottom: 7px
-
+.logo-header
+    width: 90%
 
 .contact
     &__vertical-wrapper
@@ -138,18 +139,18 @@ html
             width: 40px
             margin-right: 5px
         &:last-child
-            margin-right: 0px
+            margin-right: 0px 
             
 .slider
-    width: 921px
-    height: 411px 
+    max-width: 921px
+    max-height: 411px 
     overflow: hidden
     border: 3px solid #fff
     position: relative
     margin-bottom: 15px
     &__navigation
         position: absolute
-        bottom: 16px
+        bottom: 3%
         left: 50%
         transform: translateX(-50%)
         display: flex
@@ -191,8 +192,8 @@ html
             left: 80%
 
     &_switch
-        width: 1000px
-        height: 240px
+        max-width: 1000px
+        max-height: 240px
         border: none   
         margin-bottom: 0px
     &__btn
@@ -205,8 +206,8 @@ html
         &:hover
             color: #F2A348
     &__blocks-wrapper
-        height: 170px
-        width: 1000px
+        max-height: 170px
+        max-width: 1000px
         display: flex
         flex-direction: row
         justify-content: space-evenly
@@ -291,6 +292,9 @@ input[name="v"]
 #rr3:checked ~ .sss1
     margin-left: -66.66%
 
+.product-grid
+    display: none
+
 .dedicated-block
     border: solid #fff 2px
     border-radius: 15px
@@ -309,6 +313,8 @@ input[name="v"]
     &__header
         display: flex
         flex-direction: row
+        align-items: center
+        max: width 240px
     &__nav-container
         display: flex
         flex-direction: row
@@ -333,7 +339,7 @@ input[name="v"]
         flex-direction: column
         justify-content: space-between
         min-height: 365px
-        min-width: 1040px
+        max-width: 1040px
     &__horizontal-wrapper
         display: flex
         flex-direction: row
@@ -342,7 +348,7 @@ input[name="v"]
         min-height: 325px
     &__mission-wrapper
         min-height: 165px
-        min-width: 1040px
+        max-width: 1040px
         margin-bottom: 30px
     &__logo
         height: 255px
@@ -406,7 +412,7 @@ input[name="v"]
         p
             font-size: 20px 
     &__contacts
-        width: 921px
+        width: 100%
         display: flex
         flex-direction: row
         justify-content: space-between 
@@ -431,17 +437,311 @@ input[name="v"]
         font-size: 12px
 
 @media(max-width: 1199px)
+    /* main styles */
     .container
-        width: 960px
+        max-width: 960px
+    /*pages*/
+    .first-section
+        &__nav-container
+            margin-bottom: 15px  
+    .contact
+        &__text 
+            font-size: 17px
+        &__vertical-wrapper 
+            margin-right: 15px
+    .nav-menu
+        &__list-item
+            margin-right: 15px
+            a
+                font-size: 17px
+
 
 @media(max-width: 991px)
+    .first-section
+        min-height: 655px
+        &__header
+            max-width: 200px
     .container
-        width: 720px
+        max-width: 720px
+    .contact
+        &__text 
+            font-size: 16px
+        &__vertical-wrapper 
+            margin-right: 10px
+    .nav-menu
+        &__list-item
+            &:nth-child(3)
+                display: none
+                
+            margin-right: 10px
+            a
+                font-size: 16px
+    .contact__icon 
+        img 
+            width: 30px
+    .nav-menu-hamburger
+        width: 30%
+    .slider
+        &_switch
+            max-width: 720px
+        &__title
+            font-size: 24px
+            margin-bottom: 5px
+        &__btn
+            font-size: 20px
+            margin-right: 60px
+        &__blocks-wrapper
+            max-width: 720px
+        &__block-item
+            width: 130px
+            height: 130px
+            img
+                width: 100px
+                height: 100px
+        &__block-text
+            font-size: 15px
+            bottom: 3%
+    .second-section
+        min-height: 620px
+        &__about-wrapper
+            min-height: 280px
+        &__horizontal-wrapper
+            min-height: 250px
+        &__title
+            font-size: 26px
+            margin-bottom: 5px
+            &_small
+                font-size: 20px
+                margin-bottom: 0px
+        &__text
+            font-size: 17px
+        &__logo
+            height: 195px
+            margin-right: 25px
+        &__mission-list-item
+            font-size: 19px
+        &__mission-list
+            min-height: 70px
+        &__mission-wrapper
+            min-height: 120px
+        &__advantages-item
+            min-height: 155px
+            min-width: 130px
+        &__advantages-description
+            font-size: 16px
+    .third-section
+        min-height: 430px
+        &__title
+            font-size: 30px
+            margin-bottom: 15px
+        &__contacts
+            width: 100%
+    .footer
+        &__container
+            min-height: 235px
+        &__logo 
+            min-height: 52px
+            margin-right: 15px
+        &__signature
+            font-size: 9px
+    .nav-menu
+        &__vertical-list-title
+            font-size: 14px
+            margin-bottom: 5px
+        &__vertical-list-item 
+            font-size: 12px
+            a
+                font-size: 12px
+
+
 
 @media(max-width: 767px)
     .container
-        width: 540px
+        max-width: 540px
+    .first-section
+        min-height: 510px
+        &__header
+            max-width: 180px
+        &__nav-container
+            margin-bottom: 10px
+        &__sm 
+            display: none
+    .contact
+        &__text 
+            font-size: 15px
+        &__vertical-wrapper 
+            margin-right: 0px
+    .nav-menu
+        &__list-item
+            &:nth-child(2)
+                display: none        
+
+    .hamburger
+        width: 30px
+        margin-right: 5px
+    .slider
+        margin-bottom: 10px
+        &__addition-img-wrapper 
+            width: 105px
+            height: 105px
+        &__img-description
+            font-size: 26px
+            &_top-right
+                left: 75%
+        &_switch
+            max-width: 540px
+        &__title
+            font-size: 20px
+        &__btn
+            font-size: 18px
+            margin-right: 50px
+        &__blocks-wrapper
+            max-width: 540px
+        &__block-item
+            width: 100px
+            height: 100px
+            img
+                width: 70px
+                height: 70px
+        &__block-text
+            font-size: 11px
+    .second-section
+        min-height: 500px
+        &__about-wrapper
+            min-height: 255px
+        &__horizontal-wrapper
+            min-height: 230px
+        &__title
+            font-size: 18px
+            margin-bottom: 3px
+            &_small
+                font-size: 15px
+        &__text
+            font-size: 14px
+        &__logo
+            height: 150px
+            margin-right: 15px
+        &__mission-list-item
+            font-size: 15px
+        &__mission-list
+            min-height: 50px
+        &__mission-wrapper
+            min-height: 90px
+            margin-bottom: 10px
+        &__advantages-item
+            min-height: 115px
+            min-width: 105px
+            img
+                max-height: 70px
+        &__advantages-description
+            font-size: 13px
+    .dedicated-block
+        border: solid #fff 1px
+    .third-section
+        min-height: 330px
+        &__title
+            font-size: 18px
+            margin-bottom: 5px
+        &__slide-description 
+            h3
+                font-size: 20px
+                margin-right: 10px
+            p
+                font-size: 16px
+    .footer
+        &__container
+            min-height: 195px
+        &__logo 
+            max-height: 52px
+            min-height: 0px
+            margin-right: 10px
+    
+
+
+            
 
 @media(max-width: 575px)
     .container
+        max-width: 100%
+    .nav-menu
+        &__list-item
+            display: none  
+    .contact
+        &__text 
+            margin-right: 10px
+    .hamburger
+        width: 50px
+        margin-right: 5px
+        span
+            height: 5px
+    .nav-menu-hamburger
+        width: 50%
+        padding-top: 20%
+    .logo-header
+        width: 80%
+    .slider
+        &_switch
+            display: none
+    .product-grid
         width: 100%
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 20px     
+    .slider
+        &__block-item
+            width: 40vw
+            height: 40vw
+            margin-right: 5px
+            margin-bottom: 5px
+            &:nth-child(even)
+                margin-right: 0px
+            img
+                width: 30vw
+                height: 30vw
+        &__img-description
+            font-size: 18px
+        &__block-text
+            font-size: 16px
+        &__addition-img-wrapper
+            width: 70px
+            height: 70px
+    .second-section
+        &__horizontal-wrapper
+            flex-direction: column
+            margin-bottom: 10px
+        &__logo
+            margin-right: 0
+            margin-bottom: 10px
+            height: 100px
+        &__text
+            width: 90vw
+        &__advantages-wrapper
+            flex-wrap: wrap 
+        &__advantages-item
+            margin-bottom: 10px
+    .third-section
+        min-height: 250px
+        &__slide-description
+            h3
+                font-size: 16px
+                margin-right: 5px
+            p
+                font-size: 13px
+    .footer
+        &__nav-menu
+            flex-wrap: wrap
+        &__logo
+            display: none
+    
+        
+
+            
+        
+       
+
+  
+    
+    
+    
