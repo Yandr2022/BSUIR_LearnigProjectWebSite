@@ -17,6 +17,12 @@
     font-weight: bold
     font-style: normal
 
+@font-face 
+    font-family: "GreatVibesS"
+    src: url('../fonts/GreatVibes-Regular.ttf')
+    font-weight: normal
+    font-style: italic
+
 
 /* main styles */
 
@@ -304,9 +310,81 @@ input[name="v"]
     &__text
         text-align: center
 
+.timeline
+    position: relative
+    width: 100%
+    &::after
+        content: ''
+        position: absolute
+        width: 6px
+        background-color: #F2A348
+        top: 0
+        bottom: 0
+        left: 50%
+        margin-left: -3px
+    &__title
+        font-size: 30px
+        font-weight: bold
+        margin-bottom: 20px
+        color: #F2A348
+    &__container
+        padding: 10px 40px
+        position: relative
+        background-color: inherit
+        width: 50%
+        &::after
+            content: ''
+            position: absolute
+            width: 25px
+            height: 25px
+            right: -17px
+            background-color: #F2A348
+            border: 4px solid #f1be80
+            top: 15px
+            border-radius: 50%
+            z-index: 1
+        &_left
+            left: 0
+            &::before
+                content: " "
+                height: 0
+                position: absolute
+                top: 22px
+                width: 0
+                z-index: 1
+                right: 30px
+                border: medium solid white
+                border-width: 10px 0 10px 10px
+                border-color: transparent transparent transparent white
+        &_right
+            left: 50%
+            &::before
+                content: " "
+                height: 0
+                position: absolute
+                top: 22px
+                width: 0
+                z-index: 1
+                left: 30px
+                border: medium solid white
+                border-width: 10px 10px 10px 0
+                border-color: transparent white transparent transparent
+            &::after
+                left: -16px
+    &__content
+        padding: 20px 30px
+        background-color: white
+        position: relative
+        border-radius: 3px
+        h3
+            font-size: 28px
+            font-weight: bold
+            color: #F2A348
+        p
+            color: black
+            font-size: 20px
     /* pages */
 
-    /* main page */
 .first-section
     min-height: 775px
     padding-top: 10px
@@ -314,7 +392,7 @@ input[name="v"]
         display: flex
         flex-direction: row
         align-items: center
-        max: width 240px
+        max-width: 240px
     &__nav-container
         display: flex
         flex-direction: row
@@ -331,6 +409,50 @@ input[name="v"]
         flex-direction: column
         justify-content: center
         align-items: center
+    &__horizontal-wrapper
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 10px
+        margin-bottom: 10px
+        img
+            max-width: 15%
+    &__preface
+        padding-top: 10px
+        margin-bottom: 30px
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+            font-size: 28px
+            line-height: 30px
+            text-align: center
+        p
+            line-height: 23px
+            font-size: 21px
+            text-align: justify
+    &__img-wrapper
+        position: relative
+        max-width: 1140px
+        max-height: 490px
+        margin-bottom: 20px
+        img
+            width: 100%
+            height: 100%
+    &__img-description
+        position: absolute
+        z-index: 1
+        color: #d68010
+        font-family: "GreatVibesS"
+        bottom: 3%
+        left: 2%
+        font-size: 40px
+        line-height: 60px
+        background-color: #d4d1d167
+        text-shadow: 1px 1px 2px #3a3838
         
 .second-section
     min-height: 775px
@@ -385,6 +507,11 @@ input[name="v"]
     &__advantages-description
         font-size: 20px
         text-align: center
+    &__timeline-wrapper
+        min-height: 500px
+        display: flex
+        flex-direction: column
+        margin-bottom: 20px
         
 .third-section
     min-height: 550px
@@ -443,7 +570,15 @@ input[name="v"]
     /*pages*/
     .first-section
         &__nav-container
-            margin-bottom: 15px  
+            margin-bottom: 15px 
+        &__preface
+            h1
+                font-size: 25px
+                line-height: 27px
+            p
+                line-height: 21px
+                font-size: 19px 
+        
     .contact
         &__text 
             font-size: 17px
@@ -454,6 +589,16 @@ input[name="v"]
             margin-right: 15px
             a
                 font-size: 17px
+    .timeline
+        &__title
+            font-size: 28px
+            margin-bottom: 15px
+        &__content
+            padding: 15px 25px
+            h3
+                font-size: 26px
+            p
+                font-size: 18px
 
 
 @media(max-width: 991px)
@@ -461,6 +606,32 @@ input[name="v"]
         min-height: 655px
         &__header
             max-width: 200px
+        &__preface
+            h1
+                font-size: 23px
+                line-height: 25px
+            p
+                line-height: 20px
+                font-size: 18px
+        &__horizontal-wrapper
+            padding: 7px
+        &__img-description
+            font-size: 36px
+            line-height: 50px
+        &__img-wrapper
+            margin-bottom: 10px
+    .timeline
+        &__title
+            font-size: 26px
+            margin-bottom: 10px
+        &__content
+            padding: 10px 20px
+            h3
+                font-size: 24px
+            p
+                font-size: 17px
+        &__container
+            padding: 10px 30px
     .container
         max-width: 720px
     .contact
@@ -529,6 +700,8 @@ input[name="v"]
             min-width: 130px
         &__advantages-description
             font-size: 16px
+        &__timeline-wrapper 
+            margin-bottom: 10px
     .third-section
         min-height: 430px
         &__title
@@ -566,6 +739,22 @@ input[name="v"]
             margin-bottom: 10px
         &__sm 
             display: none
+        &__preface
+            padding-top: 5px
+            margin-bottom: 20px
+            h1
+                font-size: 18px
+                line-height: 20px
+            p
+                line-height: 18px
+                font-size: 16px      
+        &__horizontal-wrapper
+            padding: 5px
+            img
+                max-width: 18%
+        &__img-description
+            font-size: 30px
+            line-height: 48px
     .contact
         &__text 
             font-size: 15px
@@ -575,7 +764,6 @@ input[name="v"]
         &__list-item
             &:nth-child(2)
                 display: none        
-
     .hamburger
         width: 30px
         margin-right: 5px
@@ -655,6 +843,30 @@ input[name="v"]
             max-height: 52px
             min-height: 0px
             margin-right: 10px
+    .timeline
+        &::after
+            width: 3px
+        &__title
+        font-size: 24px
+        margin-bottom: 7px
+        &__content
+            padding: 8px
+            h3
+                font-size: 20px
+            p
+                font-size: 15px
+        &__container
+            padding: 10px
+            &::after
+                width: 22px
+                height: 22px
+                right: -14px
+            &_right
+                &::before
+                    display: none
+            &_left
+                &::before
+                    display: none
     
 
 
@@ -707,6 +919,31 @@ input[name="v"]
         &__addition-img-wrapper
             width: 70px
             height: 70px
+    .timeline
+        &::after
+            left: 90%
+        &__title
+            font-size: 20px
+            margin-bottom: 5px
+        &__container
+            width: 90%
+            &_right
+                left: 0%
+                &::after
+                    left: 95%
+    .first-section
+        &__preface
+            margin-bottom: 10px
+            h1
+                font-size: 14px
+                line-height: 16px
+            p
+                line-height: 16px
+                font-size: 14px
+                max-width: 95%
+        &__img-description
+            font-size: 25px
+            line-height: 30px
     .second-section
         &__horizontal-wrapper
             flex-direction: column
