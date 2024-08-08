@@ -221,13 +221,15 @@ html
     &__block-item
         width: 170px
         height: 170px
-        background-color: #74797c
+        background-color: #1a1b1b
+        background-image: linear-gradient(225deg,  #f2e1e1 0%, #a09a9a 20%,#5a5e5e 35%, #464747 50%, #303131 65%,#2b2c2c 80%,#000000 100% )
         display: flex
         flex-direction: column
         align-items: center 
         position: relative
+        opacity: 0.7
         &:hover
-            opacity: 0.8
+            opacity: 0.9
             transform: scale(1.02)
         img
             width: 130px
@@ -462,7 +464,7 @@ input[name="v"]
         display: flex
         align-self: flex-start
         padding-top: 20px
-        margin-bottom: 20px
+        margin-bottom: 10px
         &_gold
             color: $color-gold
         &_small
@@ -472,29 +474,37 @@ input[name="v"]
             margin-bottom: 10px
             text-align: justify
             align-self: center
-
-    &__store-wrapper
+    &__store-container
         display: flex
         flex-direction: column
+        width: 100%
+        height: 550px
+        justify-content: space-around
+        align-items: center
+    &__store-preview-wrapper
+        width: 45%
+    &__store-wrapper
+        display: flex
+        flex-direction: row
         justify-content: space-between
         align-items: center
-        width: 40%
-        height: 500px
+        width: 95%
+        height: 250px
         padding: 10px
         img
-            width: 60%
+            width: 50%
             border: solid 1px white
             border-radius: 3px
     &__adress-wrapper
         position: relative
-        width: 80%
-        height: 40%
+        width: 58%
+        height: 90%
         display: flex
         flex-direction: column
         align-items: flex-start
         justify-content: space-evenly
         p
-            font-size: 20px
+            font-size: 23px
             text-align: justify
             span
                 color: $color-gold
@@ -503,18 +513,12 @@ input[name="v"]
             color: white
     &__sm-wrapper
         position: absolute
-        right: 0%
+        right: 20%
         bottom: 5%
         img
             border: none
             width: 40px
-
-
-
-
-
-            
-        
+      
 .second-section
     min-height: 775px
     &_small
@@ -634,6 +638,18 @@ input[name="v"]
     &__signature
         font-size: 12px
 
+@media(max-width: 2560px)
+    .nav-menu-hamburger
+        display: nonel
+    .hamburger
+        display: none
+
+@media(max-width: 1440px)
+    .nav-menu-hamburger
+        display: block
+    .hamburger
+        display: block
+
 @media(max-width: 1199px)
     /* main styles */
     .container
@@ -649,7 +665,17 @@ input[name="v"]
             p
                 line-height: 21px
                 font-size: 19px 
-        
+        &__sm-wrapper 
+            img
+                width: 35px
+        &__store-preview-wrapper
+            width: 50%
+        &__adress-wrapper
+            width: 50%
+            p
+                font-size: 22px
+        &__title_small
+            font-size: 21px
     .contact
         &__text 
             font-size: 17px
@@ -675,6 +701,8 @@ input[name="v"]
 @media(max-width: 991px)
     .first-section
         min-height: 655px
+        &_small
+            min-height: 580px
         &__header
             max-width: 200px
         &__preface
@@ -691,6 +719,27 @@ input[name="v"]
             line-height: 50px
         &__img-wrapper
             margin-bottom: 10px
+        &__adress-wrapper
+            p
+                font-size: 18px
+        &__title_small
+            font-size: 18px
+        &__store-wrapper
+            height: 210px
+            padding: 5px
+        &__store-container
+            height: 450px
+        &__adress-wrapper
+            width: 45%
+        &__store-preview-wrapper
+            width: 52% 
+        &__sm-wrapper
+            right: 10%
+        &__title
+            &_gold
+                font-size: 26px
+                padding-top: 10px
+                margin-bottom: 10px
     .timeline
         &__title
             font-size: 26px
@@ -745,6 +794,8 @@ input[name="v"]
             bottom: 3%
     .second-section
         min-height: 620px
+        &_small
+             min-height: 560px
         &__about-wrapper
             min-height: 280px
         &__horizontal-wrapper
@@ -752,6 +803,8 @@ input[name="v"]
         &__title
             font-size: 26px
             margin-bottom: 5px
+            &_gold
+                margin-bottom: 10px
             &_small
                 font-size: 20px
                 margin-bottom: 0px
@@ -804,6 +857,8 @@ input[name="v"]
         max-width: 540px
     .first-section
         min-height: 510px
+        &_small
+            min-height: 490px
         &__header
             max-width: 180px
         &__nav-container
@@ -826,6 +881,29 @@ input[name="v"]
         &__img-description
             font-size: 30px
             line-height: 48px
+        &__title
+            &_gold
+                font-size: 18px
+            &_small
+                font-size: 16px
+                margin-bottom: 7px
+        &__store-wrapper
+            height: 180px 
+        &__store-preview-wrapper
+            width: 50%
+        &__store-container
+            height: 380px
+        &__adress-wrapper 
+            width: 45%
+            p
+                font-size: 15px
+        &__sm-wrapper
+            bottom: 5%
+            right: 0%
+            img
+                width: 25px
+    
+
     .contact
         &__text 
             font-size: 15px
@@ -844,7 +922,7 @@ input[name="v"]
             width: 105px
             height: 105px
         &__img-description
-            font-size: 26px
+            font-size: 26pxider
             &_top-right
                 left: 75%
         &_switch
@@ -866,13 +944,15 @@ input[name="v"]
             font-size: 11px
     .second-section
         min-height: 500px
+        &_small
+            min-height: 330px
         &__about-wrapper
             min-height: 255px
         &__horizontal-wrapper
             min-height: 230px
         &__title
             font-size: 18px
-            margin-bottom: 3px
+            margin-bottom: 7px
             &_small
                 font-size: 15px
         &__text
@@ -894,6 +974,8 @@ input[name="v"]
                 max-height: 70px
         &__advantages-description
             font-size: 13px
+        &__map-wrapper
+            height: 300px
     .dedicated-block
         border: solid #fff 1px
     .third-section
@@ -918,8 +1000,8 @@ input[name="v"]
         &::after
             width: 3px
         &__title
-        font-size: 24px
-        margin-bottom: 7px
+            font-size: 24px
+            margin-bottom: 7px
         &__content
             padding: 8px
             h3
@@ -938,6 +1020,7 @@ input[name="v"]
             &_left
                 &::before
                     display: none
+    
     
 
 
@@ -990,6 +1073,9 @@ input[name="v"]
         &__addition-img-wrapper
             width: 70px
             height: 70px
+        &__store-wrapper
+            img
+                display: none
     .timeline
         &::after
             left: 90%
@@ -1015,6 +1101,23 @@ input[name="v"]
         &__img-description
             font-size: 25px
             line-height: 30px
+        &__title
+            &_small
+                font-size: 17px
+        &__store-wrapper
+            flex-direction: column
+            img
+                display: none
+        &__store-preview-wrapper
+            width: 98%
+        &__adress-wrapper
+            width: 98%
+            p
+                font-size: 16px
+        &__sm-wrapper
+            img
+                display: block
+                width: 35px
     .second-section
         &__horizontal-wrapper
             flex-direction: column
@@ -1029,6 +1132,7 @@ input[name="v"]
             flex-wrap: wrap 
         &__advantages-item
             margin-bottom: 10px
+        
     .third-section
         min-height: 250px
         &__slide-description
