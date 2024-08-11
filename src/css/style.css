@@ -368,7 +368,7 @@ table {
 @font-face {
   font-family: "MontserratT";
   src: url("../fonts/Montserrat-Regular.ttf");
-  font-weight: regular;
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
@@ -386,7 +386,7 @@ table {
 /* main styles */
 html {
   font-family: "MontserratT";
-  font-weight: regular;
+  font-weight: normal;
   color: #fff;
 }
 
@@ -648,6 +648,9 @@ html {
   color: #fff;
   margin-bottom: 8px;
 }
+.slider__title span {
+  display: none;
+}
 
 .bar {
   height: 8px;
@@ -738,7 +741,6 @@ input[name=v] {
 .timeline {
   position: relative;
   width: 100%;
-  /* pages */
 }
 .timeline::after {
   content: "";
@@ -821,6 +823,46 @@ input[name=v] {
 .timeline__content p {
   color: black;
   font-size: 20px;
+}
+
+.feedback-form {
+  width: 80%;
+  margin-bottom: 10px;
+  /* pages */
+}
+.feedback-form__input-wrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+.feedback-form__input-item {
+  width: 100%;
+  padding: 14px 30px;
+  outline: none;
+  border: 1px solid #F2A348;
+  border-radius: 0;
+}
+.feedback-form__input-item:focus {
+  border: 2px solid #F2A348;
+  opacity: 0.9;
+}
+.feedback-form__btn {
+  background-color: #F2A348;
+  padding: 14px 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.feedback-form__btn:hover {
+  background-color: #f38338;
+}
+.feedback-form__btn:active {
+  background-color: #f38338;
+  opacity: 0.8;
+}
+.feedback-form__btn:focus {
+  border: 1px solid #F2A348;
 }
 
 .first-section {
@@ -980,6 +1022,28 @@ input[name=v] {
   border: none;
   width: 40px;
 }
+.first-section__contact-wrapper {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.first-section__contact-wrapper p {
+  display: block;
+  width: 80%;
+  font-size: 17px;
+  line-height: 19px;
+}
+.first-section__contact-wrapper p:not(:last-child) {
+  margin-bottom: 5px;
+}
+.first-section__contact-wrapper p span {
+  color: #F2A348;
+  font-size: 20px;
+  line-height: 22px;
+}
 
 .second-section {
   min-height: 775px;
@@ -1066,6 +1130,10 @@ input[name=v] {
   display: flex;
   justify-content: center;
 }
+.second-section__map {
+  width: 95%;
+  height: 100%;
+}
 
 .third-section {
   min-height: 550px;
@@ -1130,7 +1198,7 @@ input[name=v] {
 
 @media (max-width: 2560px) {
   .nav-menu-hamburger {
-    display: nonel;
+    display: none;
   }
   .hamburger {
     display: none;
@@ -1494,7 +1562,7 @@ input[name=v] {
     height: 105px;
   }
   .slider__img-description {
-    font-size: 26pxider;
+    font-size: 26px;
   }
   .slider__img-description_top-right {
     left: 75%;
