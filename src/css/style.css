@@ -827,6 +827,7 @@ input[name=v] {
 
 .feedback-form {
   width: 80%;
+  height: 40%;
   margin-bottom: 10px;
   /* pages */
 }
@@ -1024,7 +1025,7 @@ input[name=v] {
 }
 .first-section__contact-wrapper {
   width: 100%;
-  height: 70vh;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1541,6 +1542,16 @@ input[name=v] {
   .first-section__sm-wrapper img {
     width: 25px;
   }
+  .first-section__contact-wrapper p {
+    font-size: 16px;
+    width: 90%;
+  }
+  .first-section__contact-wrapper p span {
+    font-size: 17px;
+  }
+  .feedback-form {
+    width: 90%;
+  }
   .contact__text {
     font-size: 15px;
   }
@@ -1810,6 +1821,14 @@ input[name=v] {
   .first-section__sm-wrapper img {
     display: block;
     width: 35px;
+  }
+  .first-section__contact-wrapper p {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .first-section__contact-wrapper p span {
+    font-size: 16px;
+    line-height: 18px;
   }
   .second-section__horizontal-wrapper {
     flex-direction: column;
