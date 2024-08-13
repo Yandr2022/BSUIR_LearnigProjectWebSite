@@ -315,6 +315,63 @@ input[name="v"]
     &__text
         text-align: center
 
+.details 
+    position: relative
+    display: block
+    width: 90%
+    margin: 0 auto 10px
+    background: rgba(5, 5, 5, 0.822)
+    border-radius: 5px
+    transition: 0.3s
+    overflow: hidden
+    &::after 
+        position: absolute
+        right: 24px
+        top: 15px
+        content: ""
+        display: block
+        width: 14px
+        height: 14px
+        border-right: 3px solid $color-gold
+        border-bottom: 3px solid $color-gold
+        transform: rotate(-45deg)
+        transform-origin: center
+        transition: .3s
+    &[open]
+        &::after
+            transform: rotate(45deg)
+        padding-bottom: 100px
+        .details__title
+            margin-bottom: 32px
+    &__title
+        background: #fff
+        color: $color-gold
+        border-radius: 5px
+        padding: 12px 24px
+        font-size: 20px
+        cursor: pointer
+        list-style: none
+        font-weight: bold
+        transition: .3s
+        &::-webkit-details-marker
+            display: none
+        span
+            font-weight: normal
+            font-size: 14px
+            color: #000
+    &__content
+        padding: 0 16px
+        font-size: 16px
+        margin-bottom: -50px
+        img
+            width: 60%
+        p
+            margin-bottom: 5px
+            &:last-child
+                margin-bottom: 0
+            &:first-child
+                margin-top: 0
+
 .timeline
     position: relative
     width: 100%
