@@ -29,3 +29,4 @@ details.forEach(item => {
     if (openItem !== item) item.open = true 
   })
 })
+
